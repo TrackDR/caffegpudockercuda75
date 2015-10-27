@@ -8,11 +8,11 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869
 
 Pull from dockerhub and run docker instance:
 
-sudo docker pull trackdr/caffegpudockeralt; cd /usr/local/cuda/samples/1_Utilities/deviceQuery; make; /home/ubuntu/NVIDIA_CUDA-7.5_Samples/bin/x86_64/linux/release/deviceQuery; DOCKER_NVIDIA_DEVICES="--device /dev/nvidia0:/dev/nvidia0 --device /dev/nvidiactl:/dev/nvidiactl --device /dev/nvidia-uvm:/dev/nvidia-uvm"; sudo docker run -ti $DOCKER_NVIDIA_DEVICES trackdr/gpucaffedockeralt /bin/bash; sudo docker ps
+sudo docker pull trackdr/caffegpudockercuda75; cd /usr/local/cuda/samples/1_Utilities/deviceQuery; make; /home/ubuntu/NVIDIA_CUDA-7.5_Samples/bin/x86_64/linux/release/deviceQuery; DOCKER_NVIDIA_DEVICES="--device /dev/nvidia0:/dev/nvidia0 --device /dev/nvidiactl:/dev/nvidiactl --device /dev/nvidia-uvm:/dev/nvidia-uvm"; sudo docker run -ti $DOCKER_NVIDIA_DEVICES trackdr/caffegpudockercuda75 /bin/bash; sudo docker ps
 
 OR Build docker instance and run docker instance:
 
-git clone https://github.com/TrackDR/caffegpudockeralt; sudo docker build caffegpudockeralt; cd /usr/local/cuda/samples/1_Utilities/deviceQuery; make; /home/ubuntu/NVIDIA_CUDA-7.5_Samples/bin/x86_64/linux/release/deviceQuery; DOCKER_NVIDIA_DEVICES="--device /dev/nvidia0:/dev/nvidia0 --device /dev/nvidiactl:/dev/nvidiactl --device /dev/nvidia-uvm:/dev/nvidia-uvm"; sudo docker run -ti $DOCKER_NVIDIA_DEVICES gpucaffedockeralt /bin/bash; sudo docker ps
+git clone https://github.com/TrackDR/caffegpudockercuda75; sudo docker build caffegpudockercuda75; cd /usr/local/cuda/samples/1_Utilities/deviceQuery; make; /home/ubuntu/NVIDIA_CUDA-7.5_Samples/bin/x86_64/linux/release/deviceQuery; DOCKER_NVIDIA_DEVICES="--device /dev/nvidia0:/dev/nvidia0 --device /dev/nvidiactl:/dev/nvidiactl --device /dev/nvidia-uvm:/dev/nvidia-uvm"; sudo docker run -ti $DOCKER_NVIDIA_DEVICES gpucaffedockeralt /bin/bash; sudo docker ps
 
 Download samples for cuda:
 
