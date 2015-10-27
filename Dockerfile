@@ -19,6 +19,8 @@ RUN apt-get update && apt-get install -y \
   libsnappy-dev \
   python-pip \
   python-dev \
+  python3-pip \
+  python3-dev \
   python-numpy \
   python-scipy \
   python-skimage \
