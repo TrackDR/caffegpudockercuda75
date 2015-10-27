@@ -31,6 +31,11 @@ RUN apt-get update && apt-get install -y \
 #COPY cudnn/cudnn-6.5-linux-x64-v2/libcudnn.so.6.5 /usr/local/cuda/lib64/libcudnn.so.6.5
 #COPY cudnn/cudnn-6.5-linux-x64-v2/libcudnn.so.6.5.48 /usr/local/cuda/lib64/libcudnn.so.6.5.48
 #COPY cudnn/cudnn-6.5-linux-x64-v2/cudnn.h /usr/local/cuda/include/cudnn.h
+
+#COPY cuda/lib64/libcudnn.so /usr/local/cuda/lib64/libcudnn.so
+#COPY cuda/lib64/libcudnn.so.7.0 /usr/local/cuda/lib64/libcudnn.so.7.0
+#COPY cuda/lib64/libcudnn.so.7.0.64 /usr/local/cuda/lib64/libcudnn.so.7.0.64
+#COPY cuda/include/cudnn.h /usr/local/cuda/include/cudnn.h
 #COPY cuda_7.5.18_linux.run /cuda_7.5.18_linux.run
 
 #WORKDIR /
